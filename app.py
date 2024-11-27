@@ -7,7 +7,7 @@ import numpy as np
 import pickle
 
 # Paths to preloaded model and labels
-MODEL_PATH = "artifacts/model_training/models/Resnet152V2.h5"  
+MODEL_PATH = "artifacts/model_training/models/ResNet152V2.h5"  
 LABELS_PATH = "artifacts/labels/labels.json"  
 IMG_SIZE = 256
 
@@ -36,7 +36,6 @@ def main():
     if uploaded_file is not None:
         # Display the uploaded image
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Image", use_container_width=True)
 
         # Classify the image when the "Classify Image" button is clicked
         if st.button("Classify Image"):
@@ -58,6 +57,9 @@ def main():
 
             except Exception as e:
                 st.error(f"Error occurred during prediction: {e}")
+        
+        st.image(image, caption="Uploaded Image", use_container_width=True)
+
 
 # Run the Streamlit app
 if __name__ == "__main__":

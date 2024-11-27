@@ -61,7 +61,7 @@ class ModelTraining:
             enet_model, callback = model_structure(EfficientNetB7, 600)
             history = enet_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models, 'Efficient_model.pkl')
+            model_path = os.path.join(self.config.models, 'Efficient_model.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(enet_model, model_path)
 
@@ -87,7 +87,7 @@ class ModelTraining:
             resnet50_model, callback = model_structure(ResNet50, 224)
             history = resnet50_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models, 'ResNet50.pkl')
+            model_path = os.path.join(self.config.models, 'ResNet50.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(resnet50_model, model_path)
 
@@ -113,7 +113,7 @@ class ModelTraining:
             resnet152v2_model, callback = model_structure(ResNet152V2, 256)
             history = resnet152v2_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models, 'ResNet152V2.pkl')
+            model_path = os.path.join(self.config.models, 'ResNet152V2.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(resnet152v2_model, model_path)
 
@@ -139,7 +139,7 @@ class ModelTraining:
             mobilenet_model, callback = model_structure (MobileNet, 224)
             history = mobilenet_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models,  'MobileNet.pkl')
+            model_path = os.path.join(self.config.models,  'MobileNet.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(mobilenet_model, model_path)
 
@@ -165,7 +165,7 @@ class ModelTraining:
             vgg19_model, callback = model_structure (VGG19, 224)
             history = vgg19_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models,  'VGG19.pkl')
+            model_path = os.path.join(self.config.models,  'VGG19.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(vgg19_model, model_path)
 
@@ -191,7 +191,7 @@ class ModelTraining:
             xception_model, callback = model_structure (Xception, 224)
             history = xception_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models,  'Xception.pkl')
+            model_path = os.path.join(self.config.models,  'Xception.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(xception_model, model_path)
 
@@ -218,7 +218,7 @@ class ModelTraining:
             inceptionresnetv2_model, callback = model_structure (InceptionResNetV2, 299)
             history = inceptionresnetv2_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models,  'InceptionResNetV2.pkl')
+            model_path = os.path.join(self.config.models,  'InceptionResNetV2.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(inceptionresnetv2_model, model_path)
 
@@ -244,7 +244,7 @@ class ModelTraining:
             vgg16_model, callback = model_structure (VGG16, 224)
             history = vgg16_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models,  'VGG16.pkl')
+            model_path = os.path.join(self.config.models,  'VGG16.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(vgg16_model, model_path)
 
@@ -270,7 +270,7 @@ class ModelTraining:
             resnet101_model, callback = model_structure (ResNet101, 224)
             history = resnet101_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models,  'ResNet101.pkl')
+            model_path = os.path.join(self.config.models,  'ResNet101.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(resnet101_model, model_path)
 
@@ -297,7 +297,7 @@ class ModelTraining:
             densenet201_model, callback = model_structure (DenseNet201, 224)
             history = densenet201_model.fit(train_gen, validation_data=valid_gen, epochs=100, callbacks=callback)
             
-            model_path = os.path.join(self.config.models,  'DenseNet201.pkl')
+            model_path = os.path.join(self.config.models,  'DenseNet201.h5')
             logging.info(f'Dumping the trained model into {model_path}')
             save_into_pickle_file(densenet201_model, model_path)
 
