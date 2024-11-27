@@ -121,7 +121,7 @@ The app is built using **Streamlit** and is deployed on **Render** for public ac
    streamlit run app.py
    ```
 ## 📌 Key Considerations
-- **Dataset**: The original dataset is large, so a subset is used to maintain efficiency during training and testing.
+- **Dataset**: The original dataset is large, so a subset is used to maintain efficiency during training and testing. I have uploaded dataset in the release if you want to use it
 - **Visualization**: Comprehensive tools are provided to analyze and compare model performance.
 - **Scalability**: The modular structure and config.yaml make it easy to add or modify components.
 
