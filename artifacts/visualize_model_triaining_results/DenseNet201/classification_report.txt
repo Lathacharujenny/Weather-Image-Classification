@@ -1,0 +1,17 @@
+               precision    recall  f1-score   support
+
+         dew       0.96      0.85      0.90        78
+     fogsmog       0.77      0.94      0.85        68
+       frost       0.79      0.76      0.77        79
+       glaze       0.72      0.64      0.68        75
+        hail       0.96      0.89      0.93        91
+   lightning       0.92      1.00      0.96        79
+        rain       0.83      0.91      0.87        77
+     rainbow       1.00      0.94      0.97        48
+        rime       0.74      0.76      0.75        82
+   sandstorm       1.00      0.82      0.90        89
+        snow       0.67      0.80      0.73        76
+
+    accuracy                           0.84       842
+   macro avg       0.85      0.85      0.85       842
+weighted avg       0.85      0.84      0.84       842

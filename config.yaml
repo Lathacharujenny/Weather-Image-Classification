@@ -1,0 +1,40 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  data_zip_path: data/data.zip
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/data/dataset
+
+data_splitting:
+  root_dir: artifacts/data_splitting
+  data_path: artifacts/data_transformation/img_data.csv
+
+model_training:
+  root_dir: artifacts/model_training
+  train_data_path: artifacts/data_splitting/train.csv
+  test_data_path: artifacts/data_splitting/test.csv
+  labels_path: artifacts/labels
+  models: artifacts/model_training/models
+  visualize_results: artifacts/visualize_model_triaining_results
+  efficientnet_model: artifacts/visualize_model_triaining_results/EfficientNetB7
+  resnet50_model: artifacts/visualize_model_triaining_results/ResNet50
+  resnet152v2_model: artifacts/visualize_model_triaining_results/ResNet152V2
+  mobilenet_model: artifacts/visualize_model_triaining_results/MobileNet
+  vgg19_model: artifacts/visualize_model_triaining_results/VGG19
+  xception_model: artifacts/visualize_model_triaining_results/Xception
+  inceptionresnetv2_model: artifacts/visualize_model_triaining_results/InceptionResNetV2
+  vgg16_model: artifacts/visualize_model_triaining_results/VGG16
+  resnet101_model: artifacts/visualize_model_triaining_results/ResNet101
+  densenet201_model: artifacts/visualize_model_triaining_results/DenseNet201
+
+model_evaluate:
+  root_dir: artifacts/evaluate_scores
+  scores_json: artifacts/evaluate_scores/scores_json
+  scores_csv: artifacts/evaluate_scores/scores_csv
+  visualize_scores: artifacts/evaluate_scores/visualize_scores
+
+
+
