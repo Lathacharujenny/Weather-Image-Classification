@@ -2,7 +2,7 @@
 
 This application classifies images into **11 weather types** using advanced deep learning models. It is designed for ease of use, with detailed visualizations of model performance and a user-friendly interface deployed on Render.
 
-<img src="Image/image.webp" alt="Weather Image Classification" title="Weather Image Classification" width="600" heigh="400">
+<img src="Image/image.webp" alt="Weather Image Classification" title="Weather Image Classification" width="600" heigh="300">
 
 ---
 
