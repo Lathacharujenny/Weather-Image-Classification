@@ -7,7 +7,7 @@ import numpy as np
 import pickle
 
 # Paths to preloaded model and labels
-MODEL_PATH = "artifacts/model_training/models/Resnet152V2.pkl"  
+MODEL_PATH = "artifacts/model_training/models/Resnet152V2.h5"  
 LABELS_PATH = "artifacts/labels/labels.json"  
 IMG_SIZE = 256
 
@@ -15,9 +15,9 @@ IMG_SIZE = 256
 # Load model and labels when the app starts
 @st.cache_resource
 def load_resources():
-    with open(MODEL_PATH, 'rb') as file:
-      model = pickle.load(file)
-    #model = load_model(MODEL_PATH)
+    # with open(MODEL_PATH, 'rb') as file:
+    #   model = pickle.load(file)
+    model = load_model(MODEL_PATH)
     with open(LABELS_PATH, 'r') as file:
         labels = json.load(file)
     return model, labels
